@@ -1,61 +1,92 @@
-# VoidMatrix
+# ◈ VoidMatrix
 
-A Python desktop application with a clean interface and a focus on modular design and usability.
+**A Python Desktop Application**
 
-## Overview
+VoidMatrix is a Python-based desktop application focused on a clean user interface, practical tooling, and a structured codebase.
 
-VoidMatrix is a desktop GUI project built with Python. The project is intended to provide a foundation for a polished, maintainable desktop application.
+## ✦ Overview
 
-## Features
+Designed with a dark, modern aesthetic, VoidMatrix aims to provide a straightforward desktop experience with an emphasis on usability and maintainable code.
 
-- Desktop interface built with Tkinter
-- Organized application layout
-- Status messages and application logs
-- Modular Python code structure
-- Optional WebView integration, when configured
+## ⚡ Project Details
 
-## Requirements
+- **Project:** VoidMatrix
+- **Language:** Python
+- **Interface:** Tkinter
+- **Platform:** Windows
+- **Packaging:** PyInstaller
+
+## 🛠️ Built With
+
+- Python
+- Tkinter
+- PyInstaller
+- Optional WebView integration, where configured
+
+## 🚀 Getting Started
+
+### Requirements
 
 - Windows 10 or Windows 11
-- Python 3.10 or later
-- Tkinter
-- Optional dependencies as documented by the project
+- Python 3.10 or newer
+- Required Python dependencies for the project
 
-## Getting Started
+### Run from Source
 
-1. Clone or download this repository.
-2. Open a terminal in the project folder.
+1. Clone this repository.
+2. Open a terminal in the project directory.
 3. Create and activate a virtual environment.
-4. Install the project's required dependencies.
-5. Run the application.
+4. Install the dependencies required by the project.
+5. Launch the application:
 
 ```bash
-python muthiya_safe.py
+python VoidMatrix.py
 ```
 
-## Build
+## 📦 Build for Windows
 
-A Windows executable can be created with PyInstaller after installing the project's dependencies.
+Install PyInstaller in your Python environment:
 
 ```bash
 python -m pip install pyinstaller
 ```
 
-See the build instructions for the appropriate command for your application.
+For a cleaned-up, GUI-only version of the application, build a standalone executable with:
 
-## Project Structure
+```bash
+pyinstaller --clean --onefile --windowed --name VoidMatrix VoidMatrix.py
+```
+
+The resulting executable will normally be located at:
+
+```text
+dist/VoidMatrix.exe
+```
+
+Additional configuration may be required if the application uses external assets, browser runtimes, or other dependencies.
+
+## 📁 Repository Structure
 
 ```text
 VoidMatrix/
-├── muthiya_safe.py
+├── VoidMatrix.py
 ├── README.md
-└── .gitignore
+├── .gitignore
+└── VoidMatrix.spec
 ```
 
-## Responsible Use
+The `.spec` file is optional and is useful for maintaining custom PyInstaller build settings.
 
-Use this application only in environments you own or are explicitly authorized to test. Do not collect credentials or direct traffic at systems without permission.
+## 🔒 Responsible Use
 
-## License
+Use software and network-testing functionality only in environments you own or are explicitly authorized to test. Do not expose credentials, session tokens, API keys, or other sensitive information in public repositories.
 
-No license has been specified yet. All rights remain with the copyright holder unless a license is added.
+## 📄 License
+
+No license has been specified. Unless a license is added, the project remains subject to the copyright holder's rights.
+
+---
+
+<p align="center">
+  **VoidMatrix** · Built with Python
+</p>
